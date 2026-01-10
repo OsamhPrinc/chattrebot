@@ -1,7 +1,7 @@
 <?php
 
 $API_KEY = '8122167214:AAHyYd8JjPNs3AhZTCqoqxCIq5xC1QVlxX0'; // توكن تليجرام
-$GEMINI_KEY = getenv('AIngJJb-9FRsCJ0nsOREZc');
+$GEMINI_KEY = getenv('GEMINI_API_KEY');
  // مفتاح Gemini API
 
 // 2. دالة إرسال الرسائل لتليجرام
@@ -59,7 +59,7 @@ if(isset($update->message)){
     if($text == "/start"){
         bot('sendMessage', [
             'chat_id' => $chat_id,
-            'text' => "أهلاً بك يا $name! أنا بوتك الذكي المطور من قبل سمبدي الكمالي و المتصل بـ Gemini. 🤖\nأرسل لي أي سؤال وسأحاول الإجابة عليه.",
+            'text' => "أهلاً بك يا $name! أنا بوتك الذكي المطور من قبل سمبدي الكمالي ههه و المتصل بـ Gemini. 🤖\nأرسل لي أي سؤال وسأحاول الإجابة عليه.",
             'reply_markup' => json_encode([
                 'inline_keyboard' => [
                     [['text' => "قناتنا 📢", 'url' => 'https://t.me/dev_osamh']],
