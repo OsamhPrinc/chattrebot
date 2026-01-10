@@ -59,7 +59,7 @@ if(isset($update->message)){
     if($text == "/start"){
         bot('sendMessage', [
             'chat_id' => $chat_id,
-            'text' => "أهلاً بك يا $name! أنا بوتك الذكي المطور من قبل سمبدي الكمالي ههه و المتصل بـ Gemini. 🤖\nأرسل لي أي سؤال وسأحاول الإجابة عليه.",
+            'text' => "أهلاً بك يا $name! أنا بوتك الذكي المطور من قبل سمبدي كس الكمالي و المتصل بـ Gemini. 🤖\nأرسل لي أي سؤال وسأحاول الإجابة عليه.",
             'reply_markup' => json_encode([
                 'inline_keyboard' => [
                     [['text' => "قناتنا 📢", 'url' => 'https://t.me/dev_osamh']],
